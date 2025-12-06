@@ -14,8 +14,24 @@ It shows how to generate a secure payload (`ciphertext`, `iv`, `algorithm`) and 
 - or from the terminal `groovy DemoApp.groovy`
 
 ## Example Output
-Payload: {"ciphertext":"...","iv":"...","algorithm":"AES/CBC/PKCS5Padding"}
-Restored: [username:khaiwah, role:admin, active:true]
+
+When you run the demo, you’ll see something like:
+
+```bash
+🔐 Payload:
+{
+  "ciphertext": "U2FsdGVkX1+...",
+  "iv": "3f2a1c4d5e6f7g8h9i0j==",
+  "algorithm": "AES/CBC/PKCS5Padding"
+}
+
+✅ Restored:
+{
+  "username": "kwc",
+  "role": "admin",
+  "active": true
+}
+```
 
 ## Next Steps
 - Split classes into separate files when moving to Gradle
